@@ -118,6 +118,14 @@ At the end of creating my environment I realized that the link provided in the D
 
 ## Optimization <br>
 
+What are the benefits of using managed services for cloud infrastructure
+1. Scalability and Flexibilty: Resources can be easily scaled up or down to adjust to the demand. Also if the business needs changes these services can conform to those needs without making major changes to the infrastructure.
+2. Improved security: Managed services many times include many security features such as identity and access management and encryption.
+3. Proactive monitoring: When using managed services there is continuous monitoring and management of the infrastructure. Therefore any issues were to arise it will be quickly detected resolved before those issues have a major impact. This also eliminates the need manually monitor and manage the infrastructure which can be costly and time consuming.<br>
+
+What are some issues that a retail bank would face choosing this method of deployment and how would you address/resolve them?
+1. 
+
 
 
 
