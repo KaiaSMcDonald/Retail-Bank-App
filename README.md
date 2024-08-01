@@ -41,12 +41,45 @@ These steps will successfully allow you to take the original repository and clon
    - Connect my Github repository to Jenkins (in order to create a link between the two)
    - Begin the build
    
+5. Jenkins Build and Test
+   There are three stages in total the Checkout SCM, Build, and Test.
+   - The Checkout SCM stage is cloning and colleccting the git repository to start the build.
+   - The Build stage is where all the dependencies needed to test the logical code are downloaded and installed.
+   - The test stage ensures that all the functions and features for the application are working correctly.
 
 
 
 
 
 
+
+
+
+
+
+
+6. Deploy Retail Bank Application using AWS Elastic Beanstalk
+   - First I needed to create service roles and an EC2 for my AWS Elastic Beanstalk environment. <br>
+     The purpose of the service roles is to set the permissions needed to properly manage the application on my behalf. The service roles I added are as follows:
+     *aws-elasticbeanstalk-service-role
+     *aws-elasticbeanstalkwebtier
+     *awselasticbeanstalkworkertier
+     *awselasticbeanstalkmulticontainerdocker
+* Elastic-EC2 is also added to enable the EC2 to call all the AWS servics
+
+  - After setting all of my service roles, I then will need to create an Elastic Beanstalk Environment which is where my application will be hosted on. <br>
+  Down below are the steps to the Elastic Beanstalk Environment Configuration:
+      - Choose "Web Server Environment"
+      - Enter Application name " In my case I use 'RetailBankApp'
+      - For the Managed Platform section choose 'Python 3.7'
+      - Upload the code (which is the zip file created once you successfully went through all the build stages in Jenkins)
+      - For the instance configuartion portion the presets should be 'Single instance(free tier eligible)'
+      - Choose default VPC and the correct subnet ( In my case I chose us-east-1a for the subnet)
+      - Choose 'General Purpose(SSD) and the 'Root volume type' should be set to 10GB
+      - Choose <strong> ONLY </strong> 't3.micro' for the instance types
+      - For Basic Health Monitoring, de-select Managed Monitoring option (if not you will recieve a error that prohibits you from reaching the review page and submitting)
+      - After pressing submit the environment will be built and ready for use. There will be domain link available that will allow you to access the web application.
+    
 
 
 
