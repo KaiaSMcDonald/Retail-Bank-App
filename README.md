@@ -97,6 +97,35 @@ This system design diagram displays the environment that host the application. T
 
 ## Issues and Troubleshooting <br>
 
+Issue #1:
+At the end of creating the build in Jenkins I discovered that specifically at the build stage the code failed.The error message that displayed stated that python 3.7 couldn't be found. Upon that realization I decided that my step would be installing Python 3.7. However I discovered an easier resolution which was using the `sudo apt update && sudo apt install fontconfig openjdk-17-jre software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.7 python3.7-venv` command which made sure python was up to date and I didn't need any upgrades that will interfere with completing all the build stages. <br>
+
+
+
+
+
+
+
+Issue #2:
+At the end of creating my environment I realized that the link provided in the Domain kept on giving me an 502 error. This issue was based on the zip file I uploaded when creating the environment. The resolution is to create a source bundle which would allow me to deploy an application on AWS Elastic Beanstalk. In order to this I selected all the items within the zip file and compressed them. Once I compressed those items I recieved a Archive.zip. This file is what I uploaded into my environment and allowed the link to take to the Retail Bank App.<br>
+
+
+
+
+
+
+
+
+## Optimization <br>
+
+
+
+
+
+
+
+
+
 
 
 
