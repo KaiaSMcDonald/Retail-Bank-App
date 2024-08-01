@@ -78,7 +78,28 @@ These steps will successfully allow you to take the original repository and clon
       - Choose 'General Purpose(SSD) and the 'Root volume type' should be set to 10GB
       - Choose <strong> ONLY </strong> 't3.micro' for the instance types
       - For Basic Health Monitoring, de-select Managed Monitoring option (if not you will recieve a error that prohibits you from reaching the review page and submitting)
-      - After pressing submit the environment will be built and ready for use. There will be domain link available that will allow you to access the web application.
+      - After pressing submit the environment will be built and ready for use. There will be domain link available that will allow you to access the web application. <br>
+
+## System Design Diagram <br>
+
+
+
+
+
+
+
+
+
+
+
+This system design diagram displays the environment that host the application. The environment is the orange rounded rectangle. Once you create a environment AWS Elastic Beanstalk will provide the resources needed to run the application.The resources provided include 1 elastic load balancer, auto scaling group, and the EC2 instances. I included Route 53 in the diagram because it connects user requests to application that is running on AWS. It behaves like a DNS which provides the IP address which is crucial part in getting and delivery the response to the requests.The load balancer is a part of the auto scaling group meaning it helps with making adjustments to accomodate the amount of traffic the web servers recieve. Each component of diagram is essential to making sure that everything runs smoothly and safely on the web application without using a lot of manual power. <br>
+
+
+## Issues and Troubleshooting <br>
+
+
+
+
     
 
 
