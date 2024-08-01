@@ -1,3 +1,38 @@
+# Deploying a Retail Bank Application using AWS Elastic Beanstalk <br>
+## Purpose <br>
+<p> This project focused on and highlighted how Jenkins can be utilized to build and test code in addition to how AWS Elastic Beanstalk can deploy and host my application. AWS Elastic Beanstalk is a Platform as a Service (PaaS) that enables someone to manage, deploy, and scale web applications and services in a simplified way. This process eliminates having to scale and monitor a web application manually. Jenkins is a tool that supports the CI/CD pipeline by automating the stages of software development, such as building, testing, and deploying. The combination of AWS Elastic Beanstalk and Jenkins will help deploy an application and allow it to be prepared for customers. </p> <br>
+<p> The steps displayed down below showcase what was done to successfully run the web application.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Kura Labs Cohort 5- Deployment Workload 1
 ## Intro to CI/CD
 
