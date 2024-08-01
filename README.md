@@ -1,7 +1,22 @@
 # Deploying a Retail Bank Application using AWS Elastic Beanstalk <br>
 ## Purpose <br>
 <p> This project focused on and highlighted how Jenkins can be utilized to build and test code in addition to how AWS Elastic Beanstalk can deploy and host my application. AWS Elastic Beanstalk is a Platform as a Service (PaaS) that enables someone to manage, deploy, and scale web applications and services in a simplified way. This process eliminates having to scale and monitor a web application manually. Jenkins is a tool that supports the CI/CD pipeline by automating the stages of software development, such as building, testing, and deploying. The combination of AWS Elastic Beanstalk and Jenkins will help deploy an application and allow it to be prepared for customers. </p> <br>
-<p> The steps displayed down below showcase what was done to successfully run the web application.</p>
+<p> The steps displayed down below showcase what was done to successfully run the web application.</p> 
+
+## Steps <br>
+1. Cloning the repository to a personal repository on my Github account
+By doing this step we are able to make contributions and customize without altering the original repository.
+- First, on the EC2 instance create a new directory using `mkdir` command and then `cd` so you are in the directory you just created.
+- Next, run 'git init', following that check which branch you are in within you directory using `git branch`
+- After, run `git pull` plus the url of the original repository you are trying to add to your personal repository
+- Following that, run `git remote add origin` plus the url of the personal repository you created in your Github account
+- Lastly, run `git branch -M main` to rename the branch you are in, then run `git push -u origin main` <br> <br>
+These steps will successfully allow you to take the original repository and clone it to your personal repository on you Github account 
+  
+
+
+
+
 
 
 
