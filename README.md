@@ -13,6 +13,52 @@ By doing this step we are able to make contributions and customize without alter
 - Lastly, run `git branch -M main` to rename the branch you are in, then run `git push -u origin main` <br> <br>
 These steps will successfully allow you to take the original repository and clone it to your personal repository on you Github account 
   
+2. Create EC2 Instance to host Jenkins
+- Create the EC2 Instance within the AWS console
+- Set up security groups rules
+  * 1st one is "type-SSH" the port would be 22
+  * 2nd one is "type-HTTP" the port would be 80
+  * 3rd one is "type-Custome TCP" the port would be 8080 - this is specifically for when you are installing Jenkins
+
+3. Installing Jenkins to the Jenkins server within the EC2 Instance <br>
+   The following commands are needed to install Jenkins:
+   ```
+    $sudo apt update && sudo apt install fontconfig openjdk-17-jre software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt install python3.7 python3.7-venv
+   
+    $sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+   
+    $echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+   
+    $sudo apt-get update 
+    $sudo apt-get install jenkins 
+    $sudo systemctl start jenkins 
+    $sudo systemctl status jenkins 
+
+4. Connect to Jenkins server and Create Multibranch Pipeline
+   - Connected to Jenkins server through web browser (in the web browser use Public IP and port 8080)
+   - Created an Admin user account
+   - Generated a Multibranch Pipeline withiin Jenkins
+   - Connect my Github repository to Jenkins (in order to create a link between the two)
+   - Begin the build
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
