@@ -53,13 +53,11 @@ This is what the page looks like showing that code successfully went through the
    ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%203.36.56%20PM.png) <br>
 This is what the page looks like showing that the code successfully went through the Build stage
 
+   ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%203.37.30%20PM.png) <br>
+   This is what the page looks like showing that the code successfully went through the Test stage
 
-
-
-
-
-
-
+   ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%2012.52.27%20AM.png)
+   This shows that the code went through all the stages successfully
 
 
 7. Deploy Retail Bank Application using AWS Elastic Beanstalk
@@ -86,15 +84,7 @@ This is what the page looks like showing that the code successfully went through
 
 ## System Design Diagram <br>
 
-
-
-
-
-
-
-
-
-
+![Screenshot 2024-08-02](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%204.27.53%20PM.png) <br>
 
 This system design diagram displays the environment that host the application. The environment is the orange rounded rectangle. Once you create a environment AWS Elastic Beanstalk will provide the resources needed to run the application.The resources provided include 1 elastic load balancer, auto scaling group, and the EC2 instances. I included Route 53 in the diagram because it connects user requests to application that is running on AWS. It behaves like a DNS which provides the IP address which is crucial part in getting and delivery the response to the requests.The load balancer is a part of the auto scaling group meaning it helps with making adjustments to accomodate the amount of traffic the web servers recieve. Each component of diagram is essential to making sure that everything runs smoothly and safely on the web application without using a lot of manual power. <br>
 
@@ -128,7 +118,21 @@ What are the benefits of using managed services for cloud infrastructure
 3. Proactive monitoring: When using managed services there is continuous monitoring and management of the infrastructure. Therefore any issues were to arise it will be quickly detected resolved before those issues have a major impact. This also eliminates the need manually monitor and manage the infrastructure which can be costly and time consuming.<br>
 
 What are some issues that a retail bank would face choosing this method of deployment and how would you address/resolve them?
-1. 
+1. Performance Issues: In regards to Banking applications it is essential for them to have high performance and low latency. However a retail bank application can experience performance and latency issues if the company’s database isn't configured to deal with a increase in transactions. This particular issue will lead to slow reponse times.
+Solution: Caching- if caching mechanisms are utilized such Amazon ElastiCache latency will decrease and response times will improve. <br>
+
+2. Data Security and Privacy: Banking data is extremely sensitive and should remain confidential and secure.Therefore it is very important to have the highest security measure to avoid potential breaches and data leaks from messing with the integrity of that data. There needs to be a tool that protects this application from cybersecurity attacks like DDos.<br>
+Solution: Implement AWS Web Application Firewall(WAF) and AWS sheild specifically for DDos protection and sheild the application from any cyber attacks.
+
+What are other disadvantages of using elastic beanstalk or similar managed services for deploying applications?
+1. Limitation with Customization: Managed services only provide standardized solution so business face restrictions when they tr to tailor solutions to align with their business needs.
+2. Learning curve adopting new managed service: When introducing a new managed service some people within the business may be unfamiliar and will require time and money to train staff so they have a understanding on how to use and manage these services.
+3. Vendor Lock-In: Relying heavily on a particular cloud provider's managed service can introduce the issue of vendor lock in, so in a scenario when a business wants to switch providers or adopt multi-cloud it will be very difficult to make that transition. <br>
+
+## Conclusion <br>
+
+This project provides a great opportunity to understand the importance of Jenkins and AWS Elastic Beanstalk when deploying an application. While also exposing some of the issues that can arise by making small mistakes when uploading code, creating an environment or even cloning a repository. Overall developing solutions that incorporates automation is extremely beneficial because it helps improve accuracy and decrease deployment time which are two very key components for a business.
+
 
 
 
