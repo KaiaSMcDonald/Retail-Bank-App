@@ -47,6 +47,7 @@ These steps will successfully allow you to take the original repository and clon
    - The Build stage is where all the dependencies needed to test the logical code are downloaded and installed.
    - The test stage ensures that all the functions and features for the application are working correctly.
 
+   
 
 
 
@@ -57,8 +58,7 @@ These steps will successfully allow you to take the original repository and clon
 
 
 
-
-6. Deploy Retail Bank Application using AWS Elastic Beanstalk
+7. Deploy Retail Bank Application using AWS Elastic Beanstalk
    - First I needed to create service roles and an EC2 for my AWS Elastic Beanstalk environment. <br>
      The purpose of the service roles is to set the permissions needed to properly manage the application on my behalf. The service roles I added are as follows:
      *aws-elasticbeanstalk-service-role
