@@ -98,20 +98,24 @@ At the end of creating the build in Jenkins I discovered that specifically at th
 
 This command which made sure python was up to date and I didn't need any upgrades that will interfere with completing all the build stages. <br>
 
+![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%2010.44.52%20PM.png)
+This shows that although the Checkout SCM stage was successful. The code failed at the Build stage
 
-
-
-
+![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%2010.46.44%20PM.png)
+This displays the error code I received at the Build stage
 
 
 Issue #2:
 At the end of creating my environment I realized that the link provided in the Domain kept on giving me an 502 error. This issue was based on the zip file I uploaded when creating the environment. The resolution is to create a source bundle which would allow me to deploy an application on AWS Elastic Beanstalk. In order to this I selected all the items within the zip file and compressed them. Once I compressed those items I recieved a Archive.zip. This file is what I uploaded into my environment and allowed the link to take to the Retail Bank App.<br>
 
+![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%2011.02.33%20PM.png) <br>
+These are the items in the zip file when they haven't been compressed 
 
+![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%2011.03.00%20PM.png) <br>
+These are the items in the zip file once they have been compressed. Once I compressed these items it created the Archive.zip
 
-
-
-
+![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%201.56.45%20AM.png) <br>
+This is the 502 error I received once I clicked on the link provided in the Domain
 
 
 ## Optimization <br>
