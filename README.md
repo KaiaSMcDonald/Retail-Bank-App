@@ -48,7 +48,10 @@ These steps will successfully allow you to take the original repository and clon
    - The test stage ensures that all the functions and features for the application are working correctly.
 
    ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%203.35.47%20PM.png) <br>
-This is what the page looks like showing that code sucessfully went through the Chechout SCM stage
+This is what the page looks like showing that code successfully went through the Chechout SCM stage
+
+   ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%203.36.56%20PM.png) <br>
+This is what the page looks like showing that the code successfully went through the Build stage
 
 
 
