@@ -47,7 +47,8 @@ These steps will successfully allow you to take the original repository and clon
    - The Build stage is where all the dependencies needed to test the logical code are downloaded and installed.
    - The test stage ensures that all the functions and features for the application are working correctly.
 
-   
+   ![Screenshot 2024-08-01](https://github.com/KaiaSMcDonald/Retail-Bank-App/blob/main/Screenshot%202024-08-01%20at%203.35.47%20PM.png) <br>
+This is what the page looks like showing that code sucessfully went through the Chechout SCM stage
 
 
 
